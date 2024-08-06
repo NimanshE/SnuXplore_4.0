@@ -167,7 +167,7 @@ export default function RootLayout({
         ${nohemiLight.variable} ${nohemiMedium.variable} ${nohemiRegular.variable} ${nohemiSemiBold.variable} 
         ${nohemiThin.variable}`}
     >
-      <body className={`${montserratRegular.className}`}>
+      <body className={`${montserratRegular.className} overflow-x-hidden`}>
         {children}
         <Footer />
       </body>
