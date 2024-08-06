@@ -1,5 +1,5 @@
 'use client';
-import { profData } from "@/data/profData";
+import { profData, IProfData, IDept, IProf } from "@/data/profData";
 import { useState } from "react";
 import InfoCard from "./InfoCard";
 
@@ -19,12 +19,14 @@ export default function InfoGallery() {
 
             <div className={`${currentTab === 0 ? 'block' : 'hidden'}`}>
                 <div>
-                    
+                    {Object.entries(profData).map(([block, departments]: [string, IDept]) => (
+                        <InfoCard key={block} block={block} departments={departments} />
+                    ))}
                 </div>
             </div>
 
             {/* Test */}
-            <InfoCard />
+            {/* <InfoCard /> */}
         </div>
     )
 }
