@@ -12,13 +12,13 @@ export default function InfoGallery() {
                 <button onClick={() => setCurrentTab(0)} className={`transition-all duration-300 font-montserrat-bold px-4 py-1 rounded-lg ${currentTab === 0 ? 'text-white bg-gradient-to-r from-snuxplore-footer-g2 to-snuxplore-footer-g1' : 'text-snuxplore-footer-g1 hover:bg-neutral-200'}`}>
                     Professors
                 </button>
-                <button onClick={() => setCurrentTab(1)} className={`transition-all duration-300 font-montserrat-bold px-4 py-1 rounded-lg ${currentTab === 1 ? 'text-white bg-gradient-to-r from-snuxplore-footer-g2 to-snuxplore-footer-g1' : 'text-snuxplore-footer-g1 hover:bg-neutral-200'}`}>
+                {/* <button onClick={() => setCurrentTab(1)} className={`transition-all duration-300 font-montserrat-bold px-4 py-1 rounded-lg ${currentTab === 1 ? 'text-white bg-gradient-to-r from-snuxplore-footer-g2 to-snuxplore-footer-g1' : 'text-snuxplore-footer-g1 hover:bg-neutral-200'}`}>
                     Laboratories
-                </button>
+                </button> */}
             </div>
 
-            <div className={`${currentTab === 0 ? 'block' : 'hidden'}`}>
-                <div className={`w-full grid md:grid-cols-3 grid-cols-1 place-items-center`}>
+            <div className={`${currentTab === 0 ? 'flex' : 'hidden'}`}>
+                <div className={`flex md:flex-row md:w-full gap-10 md:flex-wrap md:justify-center flex-col md:items-start items-center`}>
                     {Object.entries(profData).map(([block, departments]: [string, IDept]) => (
                         <InfoCard key={block} block={block} departments={departments} />
                     ))}

@@ -21,7 +21,7 @@ export interface IProfData {
     D: IDept;
     F: IDept;
     R: IDept;
-    Online: IDept;
+    // Online: IDept;
 }
 
 export const profData: IProfData = {
@@ -670,22 +670,6 @@ export const profData: IProfData = {
         ]
     },
     "C": {
-        "school of natural sciences": [
-            {
-                "name": "Jugal Das",
-                "department": "Dept. of Life Sciences",
-                "email": "jugal.das@snu.edu.in",
-                "school": "school of natural sciences",
-                "room": "CiTRES 03 (Animal Block , near A block)"
-            },
-            {
-                "name": "Rudra Nayan Das",
-                "department": "Dept. of Life Sciences",
-                "email": "rudra.das@snu.edu.in",
-                "school": "school of natural sciences",
-                "room": "CiTRES02 (Animal Block , near A block)"
-            }
-        ],
         "school of engineering": [
             {
                 "name": "Aakash Sinha",
@@ -2049,24 +2033,43 @@ export const profData: IProfData = {
             }
         ],
     },
-    'Online': {
-        "school of humanities and social sciences": [
-            {
-                "name": "Monica Juneja",
-                "department": "Dept. Of Art, Media And Performance",
-                "email": "monica.juneja@snu.edu.in",
-                "school": "school of humanities and social sciences",
-                "room": "Online"
-            }
-        ],
-        "school of engineering": [
-            {
-                "name": "Harish Karnick",
-                "department": "Dept. Of Computer Science And Engineering",
-                "email": "harish.karnick@snu.edu.in",
-                "school": "school of engineering",
-                "room": "Online"
-            }
-        ],
-    }
+    // 'Online': {
+    //     "school of humanities and social sciences": [
+    //         {
+    //             "name": "Monica Juneja",
+    //             "department": "Dept. Of Art, Media And Performance",
+    //             "email": "monica.juneja@snu.edu.in",
+    //             "school": "school of humanities and social sciences",
+    //             "room": "Online"
+    //         }
+    //     ],
+    //     "school of engineering": [
+    //         {
+    //             "name": "Harish Karnick",
+    //             "department": "Dept. Of Computer Science And Engineering",
+    //             "email": "harish.karnick@snu.edu.in",
+    //             "school": "school of engineering",
+    //             "room": "Online"
+    //         }
+    //     ],
+    // }
 }
+
+/*
+        "school of natural sciences": [
+            {
+                "name": "Jugal Das",
+                "department": "Dept. of Life Sciences",
+                "email": "jugal.das@snu.edu.in",
+                "school": "school of natural sciences",
+                "room": "CiTRES 03 (Animal Block , near A block)"
+            },
+            {
+                "name": "Rudra Nayan Das",
+                "department": "Dept. of Life Sciences",
+                "email": "rudra.das@snu.edu.in",
+                "school": "school of natural sciences",
+                "room": "CiTRES02 (Animal Block , near A block)"
+            }
+        ],
+ */
