@@ -50,3 +50,6 @@ To keep your branch up-to-date with the master branch, you can use the following
 <em>Note: Make sure there are no changes in your branch before merging. If there are any, you'll lose the progress.</em>
 
 </details>
+
+# Vercel Link
+`https://snu-xplore-4-0.vercel.app/`
