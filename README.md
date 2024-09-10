@@ -52,4 +52,4 @@ To keep your branch up-to-date with the master branch, you can use the following
 </details>
 
 # Vercel Link
-`https://snu-xplore-4-0.vercel.app/`
+https://snu-xplore-4-0.vercel.app/
